@@ -15,8 +15,40 @@
       rel="stylesheet"
     />
     <link href="css/global.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
   </head>
   <body>
-    Hello World!
+    <form class="form">
+      <h1 class="form__header">Przelicznik walut</h1>
+      <p>
+        <label class="form__label">
+          <span class="form__labelText">Wpisz kwotę w pln*:</span>
+          <input class="form__field" type="number" step="0.01" required />
+        </label>
+      </p>
+      <p>
+        <label class="form__label">
+          <span class="form__labelText">Chcę wymienić na:</span>
+          <select class="form__field">
+            <option class="form__fieldOption" value="USD">
+              Dolar amerykański (USD)
+            </option>
+            <option class="form__fieldOption" value="USD">
+              Funt brytyjsji (GBP)
+            </option>
+            <option class="form__fieldOption" value="USD">Euro (EUR)</option>
+          </select>
+        </label>
+      </p>
+      <button class="form__button">Przelicz!</button>
+      <p class="form__resultInfo"></p>
+      <div class="form__infoContainer">
+        <p class="form__infoPharagraph">
+          Kursy pochodzą ze strony nbp.pl z tabeli nr 178/A/NBP/2020 z dnia
+          2020-09-11
+        </p>
+        <p class="form__infoPharagraph">Pola oznaczone * są wymagane.</p>
+      </div>
+    </form>
   </body>
 </html>
