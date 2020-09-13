@@ -63,6 +63,7 @@ form {
 .form__resultInfo {
   font-size: 27px;
   color: white;
+  text-align: center;
 }
 
 .form__infoContainer {
